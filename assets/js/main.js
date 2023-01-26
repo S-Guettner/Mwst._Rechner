@@ -29,7 +29,7 @@ const calculate = () =>{
         endpreisOutput.innerHTML = priceInput.value - (((priceInput.value) - (priceInput.value / 1.19)).toFixed(2))
     }else{
         steuerbetragOutput.innerHTML = ((priceInput.value) - (priceInput.value / 1.07)).toFixed(2)
-        endpreisOutput.innerHTML = priceInput.value - (((priceInput.value) - (priceInput.value / 1.19)).toFixed(2))
+        endpreisOutput.innerHTML = priceInput.value - (((priceInput.value) - (priceInput.value / 1.07)).toFixed(2))
     }
 }
-/* todo fix brutto to netto  */
+
