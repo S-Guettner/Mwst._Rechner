@@ -30,17 +30,17 @@ console.log(prozent7.checked);
 
 const calculate = () =>{
     if(nettoToBrutto.checked === true && prozent19.checked == true){
-        steuerbetragOutput.innerHTML = priceInput.value * 0.19
+        steuerbetragOutput.innerHTML = (priceInput.value * 0.19).toFixed(2)
         endpreisOutput.innerHTML = priceInput.value * 1.19
     }else if(nettoToBrutto.checked === true && prozent7.checked === true){
-        steuerbetragOutput.innerHTML = priceInput.value * 0.07
-        endpreisOutput.innerHTML = priceInput.value * 1.07
+        steuerbetragOutput.innerHTML = (priceInput.value * 0.07).toFixed(2)
+        endpreisOutput.innerHTML = (priceInput.value * 1.07).toFixed(2)
     }else if(BruttoToNetto.checked === true && prozent19.checked === true){
-        steuerbetragOutput.innerHTML = priceInput.value * 0.19
-        endpreisOutput.innerHTML = priceInput.value -  (priceInput.value * 0.19)
+        steuerbetragOutput.innerHTML = (priceInput.value * 0.19).toFixed(2)
+        endpreisOutput.innerHTML = (priceInput.value -  (priceInput.value * 0.19)).toFixed(2)
     }else{
         steuerbetragOutput.innerHTML = priceInput.value * 0.19
-        endpreisOutput.innerHTML = priceInput.value -  (priceInput.value * 0.07)
+        endpreisOutput.innerHTML = (priceInput.value -  (priceInput.value * 0.07)).toFixed(2)
     }
 }
 
