@@ -7,10 +7,13 @@ const endpreisOutput = document.querySelector("#endpreisOutput")
 const preisArtOutput = document.querySelector("#preisArtOutput")
 
 let contentChange = () =>{
-    if(Number(nettoToBrutto.value) === 1){
+    if(nettoToBrutto.checked === true){
         preisArtOutput.innerHTML = "Nettobetrag (Preis ohne Mehrwertsteuer) in Euro"
     }else{
         preisArtOutput.innerHTML = "Bruttobetrag(Preis inclusive Mehrwertsteuer) in Euro"
     }
 }
-contentChange();
+
+
+console.log(nettoToBrutto.checked);
+console.log(BruttoToNetto.checked);

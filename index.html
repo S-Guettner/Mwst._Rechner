@@ -13,11 +13,11 @@
             <article>
                 <form onsubmit="return false">
                     <div>
-                        <input checked="checked" type="radio" value="1" name="berechnung" id="nettoToBrutto">
+                        <input checked="checked" type="radio"  name="berechnung" id="nettoToBrutto" onchange="contentChange()">
                         <label for="nettoBrutto">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
                     </div>
                     <div>
-                        <input type="radio" value="2" name="berechnung" id="BruttoToNetto">
+                        <input type="radio"  name="berechnung" id="BruttoToNetto" onchange="contentChange()">
                         <label for="BruttoNetto">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
                     </div>
                     <div>
