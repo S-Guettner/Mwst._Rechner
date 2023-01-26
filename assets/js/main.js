@@ -1,13 +1,10 @@
 const nettoToBrutto = document.querySelector("#nettoToBrutto")
 const BruttoToNetto = document.querySelector("#BruttoToNetto")
 const priceInput = document.querySelector("#priceInput")
-
 const steuerbetragOutput = document.querySelector("#steuerbetragOutput")
 const endpreisArtOutput = document.querySelector("#endpreisArtOutput")
 const endpreisOutput = document.querySelector("#endpreisOutput")
-
 const preisArtOutput = document.querySelector("#preisArtOutput")
-
 const prozent19 = document.querySelector("#prozent19")
 const prozent7 = document.querySelector("#prozent7")
 
@@ -20,14 +17,6 @@ const contentChange = () =>{
         endpreisArtOutput.innerHTML = "Nettobetrag"
     }
 }
-
-
-console.log(nettoToBrutto.checked);
-console.log(BruttoToNetto.checked);
-console.log(prozent19.checked);
-console.log(prozent7.checked);
-
-
 const calculate = () =>{
     if(nettoToBrutto.checked === true && prozent19.checked == true){
         steuerbetragOutput.innerHTML = (priceInput.value * 0.19).toFixed(2)
