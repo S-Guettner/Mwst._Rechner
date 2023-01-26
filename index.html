@@ -22,9 +22,9 @@
                     </div>
                     <div>
                         <label class="block" for="mehrwertsteuersatz">Mehrwertsteuersatz</label>
-                        <input checked="checked" type="radio" name="mehrwertsteuer" id="19Procent">
+                        <input checked="checked" type="radio" name="mehrwertsteuer" id="prozent19">
                         <label for="19Prozent">19 %</label>
-                        <input type="radio" name="mehrwertsteuer" id="7Procent">
+                        <input type="radio" name="mehrwertsteuer" id="prozent7">
                         <label for="7Prozent">7 %</label>
                     </div>
                     <div>
@@ -32,7 +32,7 @@
                         <input step=".01" class=" border-2 w-1/3" type="number" name="price" id="priceInput">
                     </div>
                     <div class="flex justify-center">
-                        <input class="w-5/6 text-center text-white rounded-md bg-[#236ca3]" type="submit" value="Berechnen">
+                        <button  onclick="calculate()" class="w-5/6 text-center text-white rounded-md bg-[#236ca3]"">Berechnen</button>
                     </div>
                 </form>
             </article>
