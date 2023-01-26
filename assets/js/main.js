@@ -17,7 +17,7 @@ const contentChange = () =>{
     }
 }
 const calculate = () =>{
-    const priceInput = document.querySelector("#priceInput").value
+    let priceInput = document.querySelector("#priceInput").value
     if(nettoToBrutto.checked === true && prozent19.checked === true){
         steuerbetragOutput.innerHTML = (priceInput * 0.19).toFixed(2)
         endpreisOutput.innerHTML = (priceInput * 1.19).toFixed(2)
